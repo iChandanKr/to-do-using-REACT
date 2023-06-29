@@ -1,21 +1,22 @@
 
 import './App.css';
-function Fun({ name, nameforClass, income = 400000 }) {
-  return (
-    <>
-      <div className={nameforClass}>{name}:{income}</div>
-      <hr />
-    </>
-  );
-}
 
-function App() {
+
+
+import React from 'react'
+import Header from './components/Header';
+import Home from './components/Home';
+
+const App = () => {
   return (
     <div>
-      Hello<Fun name={"Chandan"} nameforClass={"class1"} income={200000} />
-      <Fun name={"Raushan"} nameforClass={"calss2"} />  Gyus </div>
-
-  );
+    <Header/>
+    <Home/> 
+    </div>
+  )
 }
 
 export default App;
+  
+
+
