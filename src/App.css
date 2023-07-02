@@ -1,38 +1,91 @@
-.App {
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Roboto', sans-serif;
+  /* border: 1px solid red; */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+nav {
+  background-color: rgb(44, 30, 242);
+  padding: 10px;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.Container {
+  background-color: rgb(255, 236, 266);
+  margin: auto;
+  width: 70%;
   min-height: 100vh;
+  padding: 4vmax 8vmax;
+  box-sizing: border-box;
+
+}
+
+
+.Container>form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.Container>form>h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: rgba(0, 0, 0, 0.845);
+}
+
+input,
+textarea,
+button {  
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.214);
+  border-radius: 5px;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: rgba(24, 156, 24, 0.544);
   color: white;
+
+}
+button:hover{
+  background-color: rgba(0, 106, 255, 0.715);
+  transition: .5sec;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task{
+   color:rgba(0,0,0,0.7) ;
+    /* background-color: rgba(249, 232, 189, 0.768); */
+    background-color: rgba(240, 244, 248, 0.847);
+    padding: 20px;
+    margin: 30px 0; 
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    /* align-items: center; */
+}
+.task>div{
+  width: 100%;
+ 
+}
+.task span{
+  color: rgba(0, 0, 0, 0.493);
+}
+.deleteBtn{
+  border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(220, 20, 60, 0.782);
+    color:white
 }
